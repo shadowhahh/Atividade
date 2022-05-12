@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+  </head>
+
+  <body> <!-- É o corpo da página. Contém o que será exibido ao usuário-->
+    <nav> <!-- Representa uma sessão da pagina ou de outras partes de dentro da pagina-->
+      <div class="nav nav-tabs" id="nav-tab" role="tablist"> <!-- Usado para variadas formas. Neste caso especifico 
+                                                              para agrupar botoes para navegação das abas dentro da pagina -->
+        <button class="nav-link active" id="nav-Atividade Prática FDW-tab" data-bs-toggle="tab" data-bs-target="#nav-Atividade Prática FDW" type="button"
+          role="tab" aria-controls="nav-Atividade Prática FDW" aria-selected="true">Atividade Prática FDW</button> <!-- Botão 
+                                                                              usado para seleçao de cada aba dentro da página-->
+      </div>
+    </nav>
+    
+    <div class="container tab-content" id="nav-tabContent"> 
+      <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"></div>
+       <br>
+        <h4>Lista de Alunos</h4>
+        <br> <!-- Usado para pular uma linha -->
+
+        <table class="table table-striped table-hover"> <!-- Inicio da construção da tabela contendo o Thead(cabeçario) e 
+                                                          Tbody(corpo da tabela)-->
+          <thead> <!-- Cabeçario da tabela-->
+            <tr>
+              <th scope="col">Nome</th>
+              <th scope="col">Ru</th>
+              <th scope="col">Curso</th>
+              <th scope="col">Data de aniversário</th>
+            </tr>
+          </thead>
+
+          <tbody> <!-- Corpo da tabela-->
+            <tr *ngFor="let alunos of lista_alunos"> <!-- O laço de repetição ngFor utiliza o array "alunos" pré-salva no 
+                                                      arquivo.ts para preencimento da tabela importanda de "lista_alunos" -->
+              <td  scope="row">{{ alunos.nome }}</td>
+              <td >{{ alunos.ru }}</td>
+              <td >{{ alunos.curso }}</td>
+              <td >{{ alunos.data_nasc }}</td>
+            </tr>
+          </tbody>
+
+        </table>
+        <hr> <!-- Usado para adicionar uma linha -->
+      </div>
+  </body>
+
+</html>
