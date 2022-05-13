@@ -5,7 +5,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Run project
 
 1. Open node.js CLI and enter in the directory. 
-2. Enter comand: npm install for downloads files Angular, bootstrap and node.
+2. Enter comand: npm install
 3. Open server with comand: ng serve
 4. Copy url: http://localhost:4200/ for choose their browser.
 
