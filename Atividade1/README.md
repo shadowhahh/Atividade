@@ -2,6 +2,13 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.3.
 
+## Run project
+
+1. Open node.js CLI and enter in the directory. 
+2. Enter comand: npm install for downloads files Angular, bootstrap and node.
+3. Open server with comand: ng serve
+4. Copy url: http://localhost:4200/ for choose their browser.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
